@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="Hari.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h2 id="name">HARIHARAN K</h2>
+            <nav>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+               
+                <div class="main">
+                    <i class="fa-solid fa-bars" id="item"></i>
+                </div>
+
+            </nav>
+           
+        </div>
+        <div class="list" id="list1">
+                <li ><a href="#">HOME</a></li>
+                <li ><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+          
+        </div>
+        <section>
+            <div class="detail">
+                <h3>HELLO!!</h3>
+                <h1>I'M HARIHARAN K</h1>
+                <h3>FROND END WEB DEVELOPER</h3>
+            </div>
+          
+            <div class="img">
+                <img src="./IMG_5346-removebg-preview.png" alt="" style="height: 50vh; ">
+            </div>
+        </section>
+        <main>
+            <div class="about">
+                <p> I am studying CSE at Achariya College of Engineering Technology. I am interested Front End Web Development. As a web designer, I will be responsible for creating and designing the layout, graphics, and overall visual appearance of websites. This includes selecting color schemes, fonts, images, and other visual elements that will enhance the user experience and make the website visually appealing.
+                </p>
+            </div>
+            <address>
+                AGE :19 <br>
+                PHNO:8489840135 <br>
+                E-MAIL:WWW.REDMARK77@GMAIL.COM
+                ADDR:NO,60.ANGALAMMAN KOVIL SREET,ANUMANDAI,VILLUPUREAM DIS,MARAKANAM TK,604303
+            </address>
+        </main>
+        
+    </div>
+    <script>
+        
+        let item=document.getElementById("item");   
+        function repeat(){
+
+            if(window.innerWidth>=535){
+                    document.getElementById("list1").style.display="none";
+                    document.getElementById("name").innerHTML="HARIHARAN K";
+                }
+                else if(window.innerWidth<=535){
+                    document.getElementById("name").innerHTML="PORTFOLIO";
+       
+                }
+        }
+            setInterval( repeat,1000);
+           
+
+        let i=1;
+        item.addEventListener("click",()=>{
+            if(i===1){
+                
+                document.getElementById("list1").classList.add("ani");
+         
+                return (i=0);
+             
+            }
+            else{
+                document.getElementById("list1").classList.remove("ani");
+                return (i=1);
+            }
+        })
+          
+           
+           
+        
+
+    </script>
+</body>
+</html>
