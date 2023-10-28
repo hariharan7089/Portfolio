@@ -16,7 +16,6 @@ header{
     text-align: center;
     padding: 10px;
     color: rgb(0, 229, 255);
-    filter: drop-shadow(2px 2px 1px black);
     text-decoration: underline;
    
 }
@@ -53,7 +52,7 @@ section{
     border: 2px solid rgba(17, 106, 230, 0.676);
 }
 button{
-    padding: 10px;
+    padding: 7px;
     border-radius: 30px;
     border: 1px solid rgba(0, 0, 0, 0);
     background-color: red;
